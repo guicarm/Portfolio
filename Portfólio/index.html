@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Guilherme Matos" />
+    <meta name="description" content="Personal portfolio" />
+    <title>Portfolio - Guilherme Matos</title>
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./src/assets/favicon/site.webmanifest" />
+
+
+    <link rel="stylesheet" href="./src/css/animations.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="slide-from-top">
+        <div class="container">
+          <div class="nav__logo">
+            <a href="./" translate="no">Home</a>
+          </div>
+
+          <div id="navigation" class="nav__links">
+            <button id="btn-mobile">
+              <div id="hamburger"></div>
+            </button>
+
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experiences">Experiences</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+
+              <li>
+                <a id="dropdown-trigger">
+                  Languages
+                  <svg
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </a>
+
+                <ul id="dropdown-content">
+                  <li><a href="./" class="active">English</a></li>
+                  <li><a href="./pages/pt-br.html">Portuguese</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="nav__cv">
+                  <a
+                    href="https://drive.google.com/file/d/1ce6SpAhVBPKqIpiEODilxaWpZfdSNApJ/view?usp=sharing"
+                    target="_blank"
+                    class="btn-outline"
+                  >
+                    CV
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav__cv">
+            <a
+              href="https://drive.google.com/file/d/1ce6SpAhVBPKqIpiEODilxaWpZfdSNApJ/view?usp=sharing"
+              target="_blank"
+              class="btn-outline"
+            >
+              CV
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div id="particles" class="fade-in"></div>
+
+        <div class="banner__line fade-in"></div>
+        <img src="./src/assets/banner.png" class="fade-in" />
+
+        <div class="container">
+          <h1 class="scale-in">
+            Guilherme<br />
+            Matos
+          </h1>
+          <span class="fade-up">Full-Stack Developer</span>
+
+          <a href="#about" class="btn fade-up">About Me</a>
+
+          <div id="mouse" class="banner__mouse fade-in">
+            <a href="#about"><div class="dot mouse-scroll"></div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="social media slide-from-left">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="https://github.com/guicarm" target="_blank">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                ></path>
+                <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/guilherme-matos-189891266/" target="_blank">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <path d="M2 9h4v12H2z"></path>
+                <path d="M4 2a2 2 0 1 0 0 4 2 2 0 1 0 0-4z"></path>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:guilhermecarneiromt@gmail.com">
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <path d="m22 6-10 7L2 6"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="social language slide-from-right">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="./pages/pt-br.html" title="Portuguese"> PT </a>
+          </li>
+          <li>
+            <a href="#" class="active" title="English"> EN </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about__description">
+          <div class="about__pic">
+            <img src="./src/assets/profile.jpg" alt="Guilherme photo" />
+
+            <div class="border__top"></div>
+            <div class="border__bottom"></div>
+          </div>
+
+          <div class="about__txt">
+            <div class="about__title">
+              <h2>About Me</h2>
+
+              <svg width="710" height="31" viewBox="0 0 710 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M709.5 2L200 1.5L172 29.5H0" stroke="url(#paint0_linear_50_2)" stroke-width="2" class="dash-lines" />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_50_2"
+                    x1="1.33376e-06"
+                    y1="16.0002"
+                    x2="710"
+                    y2="16.0002"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFFFFF" />
+                    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+
+            <p>
+            I am 19 years old, and I live in <span>São Paulo, Brazil</span>. Since I graduated from high school in 2022, I have fallen madly in love with the world of technology.
+            Ever since, I have fully immersed myself in the world of <span>software development</span>, dedicating myself entirely to learning in this field.
+            </p>
+            <p>You can get to know me better through my LinkedIn, GitHub, or by checking out my CV.</p>
+            
+
+            <div class="about__links">
+              <a href="https://www.linkedin.com/in/guilherme-matos-189891266/" target="_blank" class="btn">LinkedIn</a>
+              <a href="https://drive.google.com/file/d/1ce6SpAhVBPKqIpiEODilxaWpZfdSNApJ/view?usp=sharing" target="_blank" class="btn">
+                CV
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__skills">
+          <div class="about__title">
+            <h2>Skills</h2>
+
+            <div>
+              <svg width="287" height="34" viewBox="0 0 287 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 1H164L190 27H287" stroke="url(#paint0_linear_75_21)" stroke-width="2" class="dash-lines" />
+                <path d="M0 7H160L186 33H283" stroke="url(#paint1_linear_75_21)" stroke-width="2" class="dash-lines" />
+                <defs>
+                  <linearGradient id="paint0_linear_75_21" x1="287" y1="27" x2="4" y2="27" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFFFFF" />
+                    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_75_21" x1="283" y1="33" x2="-2.04419e-06" y2="33" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFFFFF" />
+                    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              <svg width="287" height="34" viewBox="0 0 287 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M283 33L123 33L97 7L0 7" stroke="url(#paint0_linear_75_22)" stroke-width="2" class="dash-lines" />
+                <path d="M287 27L127 27L101 1L4 1" stroke="url(#paint1_linear_75_22)" stroke-width="2" class="dash-lines" />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_75_22"
+                    x1="2.0442e-06"
+                    y1="6.99997"
+                    x2="283"
+                    y2="6.99999"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#FFFFFF" />
+                    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_75_22" x1="4" y1="0.999966" x2="287" y2="0.999988" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#FFFFFF" />
+                    <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+
+          <div id="keen-slider" class="keen-slider">
+            <div class="keen-slider__slide">
+              <img src="./src/assets/logos/js.svg" />
+            </div>
+            <div class="keen-slider__slide">
+              <img src="./src/assets/logos/react.svg" />
+            </div>
+            <div class="keen-slider__slide">
+              <img src="./src/assets/logos/java.svg" />
+            </div>
+            <div class="keen-slider__slide">
+              <img src="./src/assets/logos/spring.svg" />
+            </div>
+            <div class="keen-slider__slide">
+              <img src="./src/assets/logos/python.svg" />
+            </div>
+            <div class="keen-slider__slide">
+              <img src="./src/assets/logos/react-native.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="experiences" class="experiences">
+      <div class="container">
+        <div class="experiences__title">
+          <h2>Work Experiences</h2>
+        </div>
+
+        <div class="experiences__box">
+          <div class="experiences__line">
+            <svg width="16" height="148" viewBox="0 0 16 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 148V8" stroke="url(#paint0_linear_74_7)" stroke-width="2" class="dash-lines" />
+              <g>
+                <circle cx="8" cy="8" r="4" fill="#FFFFFF" />
+                <circle cx="8" cy="8" r="8" fill="#FFFFFF" fill-opacity="0.4" />
+              </g>
+              <defs>
+                <linearGradient id="paint0_linear_74_7" x1="8" y1="8" x2="8" y2="148" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" />
+                  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="experiences__wrapper">
+            <div class="experiences__single">
+                <h3>Seeking my first professional experience</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="projects__title">
+          <h2>Projects</h2>
+
+          <div>
+            <svg width="834" height="61" viewBox="0 0 834 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20H227L267 60H567" stroke="url(#paint0_linear_25_28)" stroke-width="2" class="dash-lines" />
+              <path d="M834 41L607 41L567 1L267 1" stroke="url(#paint1_linear_25_28)" stroke-width="2" class="dash-lines" />
+              <defs>
+                <linearGradient id="paint0_linear_25_28" x1="567.5" y1="60.4995" x2="0.499999" y2="60.4999" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" />
+                  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_25_28" x1="266.5" y1="0.500455" x2="833.5" y2="0.500129" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" />
+                  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        <p>
+          See some of my projects below <br />
+          or access my
+          <a href="https://github.com/guicarm?tab=repositories" target="_blank" class="underline">GitHub</a>.
+        </p>
+
+        <div class="project__box">
+            <div class="project__single">
+              <div class="project__header">
+                <div>
+                  <h3>Nexus</h3>
+                </div>
+                <div>
+                  <a href="https://github.com/guicarm/ProjetoNexus" target="_blank" title="Repositório Nexus">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                      ></path>
+                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+                    </svg>
+                  </a>
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <path d="M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project__description">
+                <span>
+                  Technologies:<br />
+                  Java, Spring Boot, Insomnia
+                </span>
+              </div>
+            </div>
+            <div class="project__single">
+              <div class="project__header">
+                <div>
+                  <h3>Book Vault</h3>
+                </div>
+                <div>
+                  <a href="https://github.com/guicarm/BookVault-API" target="_blank" title="Repositório BookVault">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                      ></path>
+                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+                    </svg>
+                  </a>
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <path d="M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project__description">
+                <span>
+                    Technologies:<br />
+                  Java, Spring Boot, Insomnia
+                </span>
+              </div>
+            </div>
+            <div class="project__single">
+              <div class="project__header">
+                <div>
+                  <h3>Adivinhação JS</h3>
+                </div>
+                <div>
+                  <a href="https://github.com/guicarm/JogoAdivinhacaoJS" target="_blank" title="Repositório Adivinhação">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                      ></path>
+                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+                    </svg>
+                  </a>
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <path d="M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project__description">
+                <span>
+                  Technologies:<br />
+                  React and JavaScript
+                </span>
+              </div>
+            </div>
+            <div class="project__single">
+              <div class="project__header">
+                <div>
+                  <h3>Calculadora</h3>
+                </div>
+                <div>
+                  <a href="https://github.com/guicarm/CalculadoraApp" target="_blank" title="Repositório Calculadora">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                      ></path>
+                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+                    </svg>
+                  </a>
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                      <path d="M12 9a3 3 0 1 0 0 6 3 3 0 1 0 0-6z"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project__description">
+                <span>
+                  Technologies:<br />
+                  Kotlin and XML
+                </span>
+              </div>
+            </div>
+            <div class="project__single">
+              <div class="project__header">
+                <div>
+                  <h3>FIAP Delivery</h3>
+                </div>
+                <div>
+                  <a href="https://github.com/guicarm/FIAP.DELIVERY" target="_blank" title="Repositório FIAP.DELIVERY">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                      ></path>
+                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project__description">
+                <span>
+                  Technologies:<br />
+                  Java, Spring Boot, Insomnia
+                </span>
+              </div>
+            </div>
+            <div class="project__single">
+              <div class="project__header">
+                <div>
+                  <h3>Anime Studio</h3>
+                </div>
+                <div>
+                  <a href="https://github.com/guicarm/EstudioAnimes" target="_blank" title="Repositório AnimeStudio">
+                    <svg
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.25 22.5v-3.865a3.361 3.361 0 0 0-.94-2.607c3.14-.35 6.44-1.538 6.44-6.99a5.43 5.43 0 0 0-1.5-3.746 5.058 5.058 0 0 0-.09-3.765s-1.18-.35-3.91 1.478a13.397 13.397 0 0 0-7 0C6.52 1.177 5.34 1.527 5.34 1.527a5.058 5.058 0 0 0-.09 3.765 5.43 5.43 0 0 0-1.5 3.775c0 5.413 3.3 6.602 6.44 6.991a3.366 3.366 0 0 0-.94 2.577V22.5"
+                      ></path>
+                      <path d="M9.25 19.503c-5 1.498-5-2.496-7-2.996"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project__description">
+                <span>
+                  Technologies:<br />
+                  .NET, C#, JavaScript, HTML, CSS
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact__box">
+          <div>
+ 
+            <svg width="603" height="273" viewBox="0 0 603 273" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1H42.5L132.5 91H265.5L336.5 162H597" stroke="url(#paint0_linear_5_52)" stroke-width="2" class="dash-lines" />
+              <path
+                d="M6 272H184.149L247.702 219H438.362L483.9 174H603"
+                stroke="url(#paint1_linear_5_52)"
+                stroke-width="2"
+                class="dash-lines"
+              />
+              <defs>
+                <linearGradient id="paint0_linear_5_52" x1="597" y1="162" x2="-2.70217e-05" y2="162" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" />
+                  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_5_52" x1="6" y1="174" x2="603" y2="174" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" stop-opacity="0" />
+                  <stop offset="1" stop-color="#FFFFFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+            <div>
+              <a href="https://www.linkedin.com/in/guilherme-matos-189891266/" target="_blank" class="btn">LinkedIn</a>
+              <a href="mailto:guilhermecarneiromt@gmail.com" class="btn">Email</a>
+            </div>
+
+            <svg width="604" height="273" viewBox="0 0 604 273" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M597 272H418.851L355.298 219L164.638 219L119.1 174L-3.38554e-05 174"
+                stroke="url(#paint0_linear_5_195)"
+                stroke-width="2"
+                class="dash-lines"
+              />
+              <path
+                d="M604 1L560.5 1L470.5 91L337.5 91L266.5 162L6.00037 162"
+                stroke="url(#paint1_linear_5_195)"
+                stroke-width="2"
+                class="dash-lines"
+              />
+              <defs>
+                <linearGradient id="paint0_linear_5_195" x1="597" y1="174" x2="0" y2="174" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" stop-opacity="0" />
+                  <stop offset="1" stop-color="#FFFFFF" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_5_195" x1="604" y1="162" x2="6.00001" y2="162" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#FFFFFF" stop-opacity="0" />
+                  <stop offset="1" stop-color="#FFFFFF" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Developed by Guilherme Matos <span>|</span> © All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles/1.18.11/tsparticles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+
+    <script src="./src/js/particles.js"></script>
+    <script src="./src/js/keen-slider.js"></script>
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>
